@@ -123,6 +123,7 @@ function show_anime_send() {
 window.addEventListener("scroll", () => {
     if(site_type == "月別" || site_type == "曜日別") {
         const show_number_list = show_anime_send();
+        // console.log(show_number_list);
         if(before_now != show_number_list) send_action({type: "show_now", message: show_number_list});
         before_now = show_number_list;
     }

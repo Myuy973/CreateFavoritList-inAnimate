@@ -174,7 +174,7 @@ function add_anime_element() {
         position_data.set(element.id, position);
         
     });
-    console.log(position_data);
+    // console.log(position_data);
 
 }
 
