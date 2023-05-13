@@ -1,0 +1,73 @@
+
+body {
+    margin: 0;
+}
+
+#container {
+    width: 300px;
+    padding: 5px 0 5px 5px;
+}
+
+#anime-list-container {
+    /* max-height: 200px;
+    overflow-y: scroll; */
+}
+
+#content-list {
+    max-height: 200px;
+    overflow-y: scroll;
+}
+
+
+
+/* row */
+.row-anime {
+    display: flex;
+    cursor: pointer;
+    margin: 5px 0;
+}
+
+.row-anime-name {
+    flex-basis: 100px;
+    flex-shrink: 0;
+}
+.row-anime-day-of-week {
+    flex-basis: 30px;
+    flex-shrink: 0;
+    padding: 0 10px 0 10px;
+}
+.row-anime-onair {
+    flex-basis: 100px;
+    flex-shrink: 0;
+}
+.row-anime-site-link {
+    flex-basis: 200px;
+    flex-shrink: 0;
+}
+
+.show-now-style {
+    background-color: #89ffff;
+}
+
+
+
+/* result */
+#result_container {
+    max-height: 200px;
+    overflow-y: scroll;
+}
+
+.row-anime-result {
+    display: flex;
+
+}
+.anime-checkbox {
+
+}
+
+.week-row {
+}
+
+.clipboard-copy-hide {
+    display: none;
+}
