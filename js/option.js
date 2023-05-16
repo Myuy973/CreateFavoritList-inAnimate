@@ -1,3 +1,6 @@
+import {Monthly_anime_class, Day_of_week_anime_class} from "./class.js";
+
+
 const start_button = document.getElementById("start-button");
 const anime_list_container = document.getElementById("anime-list-container");
 const create_list = document.getElementById("create-list");
@@ -7,25 +10,6 @@ const url_pattern = /^http[s]*:\/\//;
 var anime_data = [];
 var position_data = new Map();
 var site_type = "";
-
-class Monthly_anime_class {
-    constructor(id, anime_name, onair, site_link) {
-        this.id = id,
-        this.anime_name = anime_name;
-        this.onair = onair;
-        this.site_link = site_link;
-    }
-}
-
-class Day_of_week_anime_class {
-    constructor(id, anime_name, onair, day_of_week, site_link) {
-        this.id = id,
-        this.anime_name = anime_name;
-        this.onair = onair;
-        this.day_of_week = day_of_week;
-        this.site_link = site_link;
-    }
-}
 
 
 

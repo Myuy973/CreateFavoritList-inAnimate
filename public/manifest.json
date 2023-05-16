@@ -1,0 +1,17 @@
+{
+	"name": "animate list",
+	"description": "説明",
+	"manifest_version": 3,
+	"version": "1.0",
+
+	"content_scripts": [
+        {
+         	"js": ["js/main.js"],
+			"matches": ["https://www.animatetimes.com/tag/details*"],
+			"type": "module"
+		}
+    ],
+	"action": {
+		"default_popup": "option.html"
+	}
+}

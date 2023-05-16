@@ -1,23 +1,5 @@
-// import {Monthly_anime_class, Day_of_week_anime_class} from "../js/class.js";
+import {Monthly_anime_class, Day_of_week_anime_class} from "./class.js";
 
-class Monthly_anime_class {
-    constructor(id, anime_name, onair, site_link) {
-        this.id = id,
-        this.anime_name = anime_name;
-        this.onair = onair;
-        this.site_link = site_link;
-    }
-}
-
-class Day_of_week_anime_class {
-    constructor(id, anime_name, onair, day_of_week, site_link) {
-        this.id = id,
-        this.anime_name = anime_name;
-        this.onair = onair;
-        this.day_of_week = day_of_week;
-        this.site_link = site_link;
-    }
-}
 
 var before_now = 999;
 var site_type = "";
@@ -77,7 +59,7 @@ function day_of_week_list() {
                 class_list.push(day_of_week + " -----------------");
                 return;
             } else {return;}
-        } else if (element.tagName = "A") {
+        } else if (element.tagName == "A") {
 
             // id
             const anime_id = element.hash.slice(1);
